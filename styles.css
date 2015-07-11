@@ -1,0 +1,227 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-family: 'Lato', sans-serif;
+	color: black;
+
+
+}
+
+#container {
+
+	margin: 0 auto;
+
+width: 900px;
+
+
+}
+
+
+
+#left {
+
+	width: 415px;
+	margin: 0 auto;
+	float: left;
+	text-align: center;
+
+	
+}
+
+#right {
+	margin-left: 445px;
+	width: 450px;
+	border-left: 1px solid gray;
+
+
+
+}
+
+.hello {
+
+	font-weight: 900;
+	font-size: 80px;
+	color: #194c82;
+	padding-bottom: 20px;
+
+}
+
+.mynameis {
+	margin: 0px;
+	padding: 0px;
+	font-weight: 300;
+	font-size: 55px;
+
+	color: #8c8c8c;
+
+}
+
+.name {
+	font-weight: 700;
+	font-size: 65px;
+	color: black;
+}
+
+.code {
+	display: none;
+	color: #194c82;
+}
+
+.leftpic{
+	
+	width: 80px;
+
+}
+
+.righttext {
+
+	font-size: 25px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.block {
+	margin-left:25px;
+}
+
+table {
+	margin:0;
+    padding:0;
+    background:none;
+    border:none;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-image:none;
+    width: 400px;
+}
+table tr {
+	height: 65px;
+}
+
+table tr:hover{
+		color: #194c82;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	border-bottom:1px solid #000;
+}
+
+a:hover {
+	color: #194c82;
+}
+
+h1 {
+	margin:0px;
+	padding: 0px;
+}
+
+
+
+.aboutme {
+	text-align: justify;
+
+	font-size: 17px;
+	font-weight: 400;
+}
+
+
+#about {
+	margin-top: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+
+#minileft {
+	width: 300px;
+	float: left;
+}
+
+#miniright {
+	margin-left: 300px;
+}
+
+#about a{
+	color: #194c82;
+	border-bottom: 0px;
+	text-decoration: underline;
+}
+
+#logo {
+	width: 300px;
+	float: left;
+}
+
+
+.menu {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+#links {
+	margin-left: 200px;
+	text-align: right;
+}
+
+.logo {
+	margin-top: 0px;
+	font-size: 60px;
+	margin-bottom: 0px;
+	font-weight: 300;
+}
+
+
+.menu ul {
+
+    list-style-type: none;
+    text-align: right;
+    padding-top: 25px;
+    margin-left: 125px;
+}
+
+.menu li {
+	display: inline;
+
+}
+
+.menu li a{
+	font-size: 30px;
+	float: left;
+	margin-left: 35px;
+	text-decoration: none;
+	color: #194c82;
+	 font-variant: small-caps;
+	 border-bottom: 0px;
+	 font-weight: 300;
+}
+
+
+
+.menu li a:hover {
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+
+.nolink {
+	border-bottom: 0px;
+}
+.nolink:hover {
+	color: black;
+
+}
+
+.mywork {
+	font-size: 35px;
+	font-weight: 300;
+	text-align: center;
+	margin:0px;
+	padding: 0px;
+}
+
+
