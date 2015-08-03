@@ -12,7 +12,7 @@
       function rotateTerm() {
         var ct = $("#rotate").data("term") || 0;
         $("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn(1000)
-                    .delay(1000).fadeOut(1000, rotateTerm);
+                    .delay(1000).fadeTo(1000, rotateTerm);
       }
       // Not needed anymore as the DOM is ready at this point
       // $(rotateTerm);
