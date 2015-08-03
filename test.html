@@ -7,12 +7,12 @@
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-      var terms = ["term 1", "term 2", "term 3"];
+      var terms = ["term 1 is longer", "term 2", "term 3 is another length"];
 
       function rotateTerm() {
         var ct = $("#rotate").data("term") || 0;
-        $("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn()
-                    .delay(2000).fadeOut(200, rotateTerm);
+        $("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn(1000)
+                    .delay(1000).fadeOut(1000, rotateTerm);
       }
       // Not needed anymore as the DOM is ready at this point
       // $(rotateTerm);
