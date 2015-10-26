@@ -1,8 +1,8 @@
 from random import randint
 
 mega_list = []
-num_blocks = 1000
-max_dim_size = 100
+num_blocks = 3523
+max_dim_size = 10000000000
 
 for i in range(0, num_blocks):
     one = randint(1, max_dim_size)
@@ -10,7 +10,7 @@ for i in range(0, num_blocks):
     three = randint(1, max_dim_size)
     mega_list.append([one, two, three])
 
-with open('custom1.in', 'w') as output:
+with open('custom6.in', 'w') as output:
     output.write(str(len(mega_list)) + "\n")
     for type in mega_list:
         s = ""
