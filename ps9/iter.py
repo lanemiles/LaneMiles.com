@@ -1,4 +1,23 @@
 import sys
+import itertools
+import time
+
+
+def can_stack(top, bottom):
+    """
+    can_stack takes two blocks and returns if you
+    can stack the first on top of the second
+
+    inputs:
+    1. top (a list of l, w, h)
+    2. bottom (a list of l, w, h)
+
+    output:
+    1. true, if can stack top on bottom
+    2. false, otherwise
+    """
+
+    return (top[0] < bottom[0]) and (top[1] < bottom[1])
 
 
 def valid_perms(blocks):
@@ -21,7 +40,7 @@ def valid_perms(blocks):
     for block in blocks:
 
         # generate all possible permutations
-        permutations = perms(block)
+        permutations = list(itertools.permutations(block))
 
         # from within all the possible permutations,
         # select the valid subset for which length <= width
@@ -30,43 +49,6 @@ def valid_perms(blocks):
                 valid_perms_lst.append(perm)
 
     return valid_perms_lst
-
-
-def perms(block):
-    """
-    perms takes a single block and
-    returns all permutations of that block
-
-    inputs:
-    1. block (a list of lists of format [l, w, h])
-
-    outputs:
-    1. result (a list of lists of format [l, w, h]),
-    all permutations of block
-    """
-
-    # base case: the only permutation of a single
-    # element is itself
-    if len(block) == 1:
-        return [block]
-
-    # recursive case:
-    result = []
-
-    # take the first element
-    first = block[0]
-
-    # permutations of the list w/o the first element
-    rest = perms(block[1:])
-
-    # insert the first element into every index spot
-    # of every permutation of the rest of the list
-    for perm in rest:
-        length = len(perm)
-        for i in range(0, length+1):
-            result.append(perm[0:i] + [first] + perm[i:])
-
-    return result
 
 
 def parse_input_file(path):
@@ -107,6 +89,7 @@ def parse_input_file(path):
 
 
 def main():
+    t1 = time.time()
     """
     parse_input_file takes the path to a file
     and extracts the block information from that file,
@@ -146,22 +129,15 @@ def main():
     # fill in rest of table
     for i in range(1, len(block_perms)):
 
-        temp_height.append((block_perms[i][2], None))
-
-        i_length = block_perms[i][0]
-        i_width = block_perms[i][1]
-
         # for all lesser blocks, if stackable, compute total height if stacked
         for q in range(0, i):
 
-            # if we can put the ith block permutation on top of the qth
-            q_length = block_perms[q][0]
-            q_width = block_perms[q][1]
-            if (i_length < q_length) and (i_width < q_width):
+            if can_stack(block_perms[i], block_perms[q]):
                 temp_height.append((blocks[q][0] + block_perms[i][2], q))
+            elif block_perms[i][2] not in temp_height:
+                temp_height.append((block_perms[i][2], None))
 
         # pick the maximum total height
-
         max_height = max(temp_height, key=lambda x: x[0])
         temp_height = []
         blocks.append(max_height)
@@ -196,5 +172,9 @@ def main():
                 to_print += str(dim) + " "
             to_print = to_print[:-1] + "\n"
             output.write(to_print)
+
+    t2 = time.time()
+    print t2-t1
+
 
 main()
