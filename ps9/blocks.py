@@ -146,7 +146,7 @@ def main():
     # fill in rest of table
     for i in range(1, len(block_perms)):
 
-        # worst case, the tallest tower is just block permutation i
+        # worst case, the tallest tower is just block permutation i, so add it
         temp_height.append((block_perms[i][2], None))
 
         i_length = block_perms[i][0]
