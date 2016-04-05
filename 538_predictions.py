@@ -9,8 +9,9 @@ json = r.json()
 games = json['games']['mens']
 win_probability_master = {}
 
-# for each game
-for i in range(len(games)-1):
+# for each game (need to subtract one for womens
+# before the nat'l championship has happened)
+for i in range(len(games)):
 
     # get snapshots
     times = games[i]['winprobs']
