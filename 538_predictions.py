@@ -1,5 +1,4 @@
 import requests
-import scipy.stats
 import csv
 
 # get madness.json
