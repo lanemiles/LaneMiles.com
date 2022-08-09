@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/LaneMiles.com/static/css/main.30736026.css",
-    "main.js": "/LaneMiles.com/static/js/main.54f30abf.js",
+    "main.js": "/LaneMiles.com/static/js/main.9fc3ad97.js",
     "static/js/787.5809834d.chunk.js": "/LaneMiles.com/static/js/787.5809834d.chunk.js",
     "static/media/Lane Miles Resume.pdf": "/LaneMiles.com/static/media/Lane Miles Resume.b8076b7f550e0e0d4094.pdf",
     "static/media/workbig.png": "/LaneMiles.com/static/media/workbig.649becfaf441661a51ee.png",
@@ -12,11 +12,11 @@
     "static/media/linkedinbig.png": "/LaneMiles.com/static/media/linkedinbig.d8f5a7c623ed3dfc7e92.png",
     "index.html": "/LaneMiles.com/index.html",
     "main.30736026.css.map": "/LaneMiles.com/static/css/main.30736026.css.map",
-    "main.54f30abf.js.map": "/LaneMiles.com/static/js/main.54f30abf.js.map",
+    "main.9fc3ad97.js.map": "/LaneMiles.com/static/js/main.9fc3ad97.js.map",
     "787.5809834d.chunk.js.map": "/LaneMiles.com/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.30736026.css",
-    "static/js/main.54f30abf.js"
+    "static/js/main.9fc3ad97.js"
   ]
 }
