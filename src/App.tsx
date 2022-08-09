@@ -5,6 +5,8 @@ import schoolIcon from './images/universitybig.png'
 import githubIcon from './images/githubbig.png'
 import linkedInIcon from './images/linkedinbig.png'
 import resumeIcon from './images/resumebig.png'
+// @ts-ignore
+import resumePdf from './images/Lane Miles Resume.pdf'
 import RotatingText from './RotatingText'
 
 function App() {
@@ -38,7 +40,7 @@ function App() {
           </div>
           <div className="info-row">
             <img className="icon" src={resumeIcon} alt="Resume Icon"></img>
-            <p className="about"><a href="/Lane Miles Resume.pdf" target="_blank" rel="noreferrer">Resume</a></p>
+            <p className="about"><a href={resumePdf} target="_blank" rel="noreferrer">Resume</a></p>
           </div>
           <div className="info-row">
             <img className="icon" src={linkedInIcon} alt="LinkedIn Icon"></img>
